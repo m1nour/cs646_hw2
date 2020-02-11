@@ -16,33 +16,180 @@
 
         <CheckBox
             android:id="@+id/checkBox596"
-            android:layout_width="match_parent"
+            android:layout_width="95dp"
             android:layout_height="wrap_content"
-            android:text="@string/cs596_text" />
+            android:text="@string/cs596" />
 
-        <CheckBox
-            android:id="@+id/checkBox605"
+        <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/cs605_text" />
+            android:layout_height="match_parent">
 
-        <CheckBox
-            android:id="@+id/checkBox615"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/cs615_text" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        <CheckBox
-            android:id="@+id/checkBox646"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/cs646_text" />
+                <TextView
+                    android:id="@+id/textView596Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs596_title" />
+            </TableRow>
 
-        <CheckBox
-            android:id="@+id/checkBox696"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/cs696_text" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView596Room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs596_room" />
+
+                <TextView
+                    android:id="@+id/textView596Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs596_time" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/checkBox605"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs605_no" />
+
+                <TextView
+                    android:id="@+id/textView605Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs605_title" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView605Room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs605_room" />
+
+                <TextView
+                    android:id="@+id/textView605Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs605_time" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/checkBox615"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs615_no" />
+
+                <TextView
+                    android:id="@+id/textView615Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs615_title" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView615Room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs615_room" />
+
+                <TextView
+                    android:id="@+id/textView615Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs615_time" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/checkBox646"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs646_no" />
+
+                <TextView
+                    android:id="@+id/textView646Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs646_title" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView646Room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs646_room" />
+
+                <TextView
+                    android:id="@+id/textView646Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs646_time" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/checkBox696"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs696_no" />
+
+                <TextView
+                    android:id="@+id/textView696Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs696_title" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView696Room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs696_room" />
+
+                <TextView
+                    android:id="@+id/textView696Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs696_time" />
+            </TableRow>
+
+        </TableLayout>
 
         <Space
             android:layout_width="match_parent"

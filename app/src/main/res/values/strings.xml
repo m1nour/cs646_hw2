@@ -10,9 +10,26 @@
     <string name="info">Edit Information</string>
     <string name="classes">Edit Classes</string>
     <string name="home">Home</string>
-    <string name="cs596_text">CS596: Wireless Networks</string>
-    <string name="cs605_text">CS605: Scientific Computing</string>
-    <string name="cs615_text">CS615: Spatial Databases</string>
-    <string name="cs646_text">CS646: Android Mobile Application Development</string>
-    <string name="cs696_text">CS696: Applied Computer Vision</string>
+
+    <string name="cs596">CS 596: Wireless Networks\nRoom: GC 1501\tTime: 7:00 am</string>
+
+    <string name="cs605_no">CS 605:</string>
+    <string name="cs605_title">Scientific Computing</string>
+    <string name="cs605_room">P 120</string>
+    <string name="cs605_time">2:00 pm</string>
+
+    <string name="cs615_no">CS 615 </string>
+    <string name="cs615_title">Spatial Databases</string>
+    <string name="cs615_room">M 320</string>
+    <string name="cs615_time">12:00 pm</string>
+
+    <string name="cs646_no">CS 646 </string>
+    <string name="cs646_title">Android Mobile Application Development</string>
+    <string name="cs646_room">GC 1504</string>
+    <string name="cs646_time">7:00 pm</string>
+
+    <string name="cs696_no">CS 696 </string>
+    <string name="cs696_title">Applied Computer Vision</string>
+    <string name="cs696_room">GMCS 207</string>
+    <string name="cs696_time">3:30 pm</string>
 </resources>
