@@ -17,46 +17,46 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_weight="0" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_weight="0" />
 
         <TableLayout
-            android:id="@+id/tableLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:context=".InfoActivity">
 
             <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <TextView
                     android:id="@+id/nameLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
-                    android:layout_marginTop="0dp"
                     android:text="@string/name" />
 
                 <Space
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
-                <TextView
-                    android:id="@+id/nameTextView"
+                <EditText
+                    android:id="@+id/nameEditText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:layout_weight="0"
-                    android:text="@string/unset" />
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:ems="10"
+                    android:hint="@string/name_hint"
+                    android:inputType="textPersonName" />
 
             </TableRow>
 
             <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <TextView
                     android:id="@+id/emailLabel"
@@ -70,13 +70,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
-                <TextView
-                    android:id="@+id/emailTextView"
+                <EditText
+                    android:id="@+id/emailEditText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/unset" />
-
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:ems="10"
+                    android:hint="@string/email_hint"
+                    android:inputType="textEmailAddress" />
             </TableRow>
 
             <TableRow
@@ -95,27 +98,27 @@
                     android:layout_width="10dp"
                     android:layout_height="wrap_content" />
 
-                <TextView
-                    android:id="@+id/idTextView"
-                    android:layout_width="match_parent"
+                <EditText
+                    android:id="@+id/idEditText"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/unset" />
-
+                    android:ems="10"
+                    android:hint="@string/id_hint"
+                    android:inputType="number" />
             </TableRow>
 
         </TableLayout>
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1" />
 
         <Button
-            android:id="@+id/infoButton"
+            android:id="@+id/homeButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/info" />
+            android:text="@string/home" />
 
         <Button
             android:id="@+id/classesButton"

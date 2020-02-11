@@ -4,71 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Classes">
-
-    <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="601dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <CheckBox
-                android:id="@+id/checkBox596"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/cs596_text" />
-
-            <CheckBox
-                android:id="@+id/checkBox605"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/cs605_text" />
-
-            <CheckBox
-                android:id="@+id/checkBox615"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/cs615_text" />
-
-            <CheckBox
-                android:id="@+id/checkBox646"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/cs646_text" />
-
-            <CheckBox
-                android:id="@+id/checkBox696"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/cs696_text" />
-
-        </LinearLayout>
-    </ScrollView>
+    tools:context=".ClassesActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/button"
+        <CheckBox
+            android:id="@+id/checkBox596"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="@string/cs596_text" />
+
+        <CheckBox
+            android:id="@+id/checkBox605"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cs605_text" />
+
+        <CheckBox
+            android:id="@+id/checkBox615"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cs615_text" />
+
+        <CheckBox
+            android:id="@+id/checkBox646"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cs646_text" />
+
+        <CheckBox
+            android:id="@+id/checkBox696"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cs696_text" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home" />
+
+        <Button
+            android:id="@+id/infoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/info" />
+
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

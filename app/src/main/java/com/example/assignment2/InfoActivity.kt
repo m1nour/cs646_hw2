@@ -1,20 +1,15 @@
-package com.example.assignment1
+package com.example.assignment2
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
-import android.text.InputFilter
-import androidx.core.app.ComponentActivity
-import androidx.core.app.ComponentActivity.ExtraData
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 
 
-
-
-class MainActivity : AppCompatActivity() {
+class InfoActivity : AppCompatActivity() {
 
     private val nameKey = "name"
     private val ageKey = "age"
@@ -23,9 +18,19 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
+        setContentView(R.layout.activity_info)
 
+        val homeButton = findViewById<Button>(R.id.homeButton)
+        homeButton.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+        val classesButton = findViewById<Button>(R.id.classesButton)
+        classesButton.setOnClickListener {
+            val intent = Intent(this, ClassesActivity::class.java)
+            startActivity(intent)
+        }
+    }
     override fun onPause() {
         super.onPause()
         //Save data in app SharedPreferences
@@ -35,14 +40,8 @@ class MainActivity : AppCompatActivity() {
         val nameEditText = findViewById<EditText>(R.id.nameEditText)
         editor.putString(nameKey, nameEditText.text.toString())
         //Age
-        val ageEditText = findViewById<EditText>(R.id.ageEditText)
+        val ageEditText = findViewById<EditText>(R.id.emailEditText)
         editor.putString(ageKey, ageEditText.text.toString())
-        //Origin
-        val originSpinner = findViewById<Spinner>(R.id.originSpinner)
-        editor.putInt(originKey, originSpinner.selectedItemPosition)
-        //OS
-        val osSpinner = findViewById<Spinner>(R.id.osSpinner)
-        editor.putInt(osKey, osSpinner.selectedItemPosition)
         editor.commit()
     }
 
@@ -55,12 +54,6 @@ class MainActivity : AppCompatActivity() {
         findViewById<EditText>(R.id.nameEditText).setText(nameLoadStr)
         //Age
         val ageLoadStr = sharedPreferences.getString(ageKey, "")
-        findViewById<EditText>(R.id.ageEditText).setText(ageLoadStr)
-        //Origin
-        val originLoadIdx = sharedPreferences.getInt(originKey, 0)
-        findViewById<Spinner>(R.id.originSpinner).setSelection(originLoadIdx)
-        //OS
-        val osLoadIdx = sharedPreferences.getInt(osKey, 0)
-        findViewById<Spinner>(R.id.osSpinner).setSelection(osLoadIdx)
+        findViewById<EditText>(R.id.emailEditText).setText(ageLoadStr)
     }
 }
