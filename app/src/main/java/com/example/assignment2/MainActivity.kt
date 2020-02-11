@@ -31,25 +31,17 @@ class MainActivity : AppCompatActivity() {
     }
     override fun onResume() {
         super.onResume()
-        val sharedPreferences = getPreferences(Context.MODE_PRIVATE)
+        val sharedPreferences = getSharedPreferences("Data", Context.MODE_PRIVATE)
         //Load data from app SharedPreferences
         //Name
         val nameLoadStr = sharedPreferences.getString(nameKey, "Unset")
-        val nameTextView = findViewById<TextView>(R.id.nameTextView)
-        nameTextView.setOnClickListener{
-            nameTextView.text = nameLoadStr;
-        }
+        findViewById<TextView>(R.id.nameTextView).setText(nameLoadStr)
+
         //email
         val emailLoadStr = sharedPreferences.getString(emailKey, "Unset")
-        val emailTextView = findViewById<TextView>(R.id.emailTextView)
-        emailTextView.setOnClickListener{
-            emailTextView.text = emailLoadStr
-        }
+        findViewById<TextView>(R.id.emailTextView).setText(emailLoadStr)
         //ID
         val idLoadStr = sharedPreferences.getString(idKey, "Unset")
-        val idTextView = findViewById<TextView>(R.id.idTextView)
-        idTextView.setOnClickListener{
-            idTextView.text = idLoadStr
-        }
+        findViewById<TextView>(R.id.idTextView).setText(idLoadStr)
     }
 }

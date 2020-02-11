@@ -34,7 +34,7 @@ class ClassesActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         //Save data in app SharedPreferences
-        val sharedPreferences = getPreferences(Context.MODE_PRIVATE)
+        val sharedPreferences = getSharedPreferences("Data", Context.MODE_PRIVATE)
         val editor = sharedPreferences.edit()
         //CS596
         val cs596CheckBox = findViewById<CheckBox>(R.id.checkBox596)
@@ -56,7 +56,7 @@ class ClassesActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        val sharedPreferences = getPreferences(Context.MODE_PRIVATE)
+        val sharedPreferences = getSharedPreferences("Data", Context.MODE_PRIVATE)
         //Load data from app SharedPreferences
         //CS596
         val cs596Check = sharedPreferences.getBoolean(cs596Key, false)

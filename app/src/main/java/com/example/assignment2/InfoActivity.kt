@@ -33,7 +33,7 @@ class InfoActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         //Save data in app SharedPreferences
-        val sharedPreferences = getPreferences(Context.MODE_PRIVATE)
+        val sharedPreferences = getSharedPreferences("Data", Context.MODE_PRIVATE)
         val editor = sharedPreferences.edit()
         //Name
         val nameEditText = findViewById<EditText>(R.id.nameEditText)
@@ -49,7 +49,7 @@ class InfoActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        val sharedPreferences = getPreferences(Context.MODE_PRIVATE)
+        val sharedPreferences = getSharedPreferences("Data", Context.MODE_PRIVATE)
         //Load data from app SharedPreferences
         //Name
         val nameLoadStr = sharedPreferences.getString(nameKey, "")
