@@ -18,18 +18,8 @@ class InfoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_info)
-
-        val homeButton = findViewById<Button>(R.id.homeButton)
-        homeButton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
-        val classesButton = findViewById<Button>(R.id.classesButton)
-        classesButton.setOnClickListener {
-            val intent = Intent(this, ClassesActivity::class.java)
-            startActivity(intent)
-        }
     }
+
     override fun onPause() {
         super.onPause()
         //Save data in app SharedPreferences

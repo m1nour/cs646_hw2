@@ -1,24 +1,24 @@
 <resources>
     <string name="app_name">Assignment 2</string>
-    <string name="name">Name:</string>
-    <string name="email">email address:</string>
-    <string name="id">Red ID:</string>
+    <string name="name">Name:\n</string>
+    <string name="email">email address:\n</string>
+    <string name="id">Red ID:\n</string>
     <string name="name_hint">e.g: John Smith</string>
     <string name="email_hint">e.g: foo@bar.com</string>
     <string name="id_hint">e.g: 12345678</string>
     <string name="unset">Unset</string>
     <string name="info">Edit Information</string>
     <string name="classes">Edit Classes</string>
-    <string name="home">Home</string>
+    <string name="classes_label">Classes:\n</string>
 
-    <string name="cs596">CS 596: Wireless Networks\nRoom: GC 1501\nTime: 7:00 am</string>
+    <string name="cs596">CS 596: Wireless Networks\nRoom: GC 1501\nTime: 7:00 am\n</string>
 
-    <string name="cs605">CS 605: Scientific Computing\nRoom: P 120\nTime: 2:00 pm</string>
+    <string name="cs605">CS 605: Scientific Computing\nRoom: P 120\nTime: 2:00 pm\n</string>
 
-    <string name="cs615">CS 615: Spatial Databases\nRoom: M 320\nTime: 12:00 pm</string>
+    <string name="cs615">CS 615: Spatial Databases\nRoom: M 320\nTime: 12:00 pm\n</string>
 
-    <string name="cs646">CS 646: Android Mobile Application Development\nRoom: GC 1504\nTime: 7:00 pm</string>
+    <string name="cs646">CS 646: Android Mobile Application Development\nRoom: GC 1504\nTime: 7:00 pm\n</string>
 
-    <string name="cs696">CS 696: Applied Computer Vision\nRoom: GMCS 207\nTime: 3:30 pm</string>
+    <string name="cs696">CS 696: Applied Computer Vision\nRoom: GMCS 207\nTime: 3:30 pm\n</string>
 
 </resources>

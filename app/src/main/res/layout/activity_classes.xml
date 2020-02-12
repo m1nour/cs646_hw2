@@ -8,15 +8,15 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ScrollView
             android:id="@+id/scrollView2"
             android:layout_width="match_parent"
-            android:layout_height="283dp"
+            android:layout_height="0dp"
             android:layout_marginTop="2dp"
-            android:layout_marginBottom="220dp"
-            app:layout_constraintBottom_toTopOf="@+id/homeButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -27,14 +27,16 @@
                 android:orientation="vertical">
 
                 <CheckBox
+                    android:id="@+id/checkBox596"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs596" />
+
+                <CheckBox
                     android:id="@+id/checkBox605"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/cs605" />
-
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="5dp" />
 
                 <CheckBox
                     android:id="@+id/checkBox615"
@@ -42,19 +44,11 @@
                     android:layout_height="wrap_content"
                     android:text="@string/cs615" />
 
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="5dp" />
-
                 <CheckBox
-                    android:id="@+id/checkBox596"
+                    android:id="@+id/checkBox646"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/cs596" />
-
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="5dp" />
+                    android:text="@string/cs646" />
 
                 <CheckBox
                     android:id="@+id/checkBox696"
@@ -62,37 +56,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/cs696" />
 
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="5dp" />
-
-                <CheckBox
-                    android:id="@+id/checkBox646"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/cs646" />
-
             </LinearLayout>
         </ScrollView>
-
-        <Button
-            android:id="@+id/homeButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/home"
-            app:layout_constraintBottom_toTopOf="@+id/infoButton"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/infoButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="1dp"
-            android:text="@string/info"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
